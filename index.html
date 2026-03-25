@@ -1,216 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mahnster • unleash the beast</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Mahnster</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
-    
     body {
-      font-family: 'VT323', monospace;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
     }
-    .title-font {
-      font-family: 'Press Start 2P', system-ui;
+    .container {
+      max-width: 600px;
+      padding: 20px;
     }
-    .neon-text {
-      text-shadow: 0 0 10px #22ff88,
-                   0 0 20px #22ff88,
-                   0 0 40px #ff0088;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
-    .hero-bg {
-      background: linear-gradient(180deg, #0a0a0a 0%, #1a0033 100%);
+    p {
+      font-size: 1.2rem;
+      color: #94a3b8;
     }
-    .monster-glow {
-      filter: drop-shadow(0 0 30px #22ff88);
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #0ea5e9;
     }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-200 overflow-x-hidden">
-
-  <!-- Navbar -->
-  <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-emerald-500/30">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-emerald-500 text-black font-bold text-3xl flex items-center justify-center rounded-full border-4 border-pink-500">M</div>
-        <span class="title-font text-3xl tracking-tighter neon-text">MAHNSTER</span>
-      </div>
-      <div class="flex gap-8 text-lg">
-        <a href="#about" class="hover:text-emerald-400 transition">ABOUT</a>
-        <a href="#work" class="hover:text-emerald-400 transition">WORK</a>
-        <a href="#contact" class="hover:text-emerald-400 transition">CONTACT</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero-bg min-h-screen flex items-center pt-20">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-      <div class="space-y-8">
-        <div class="inline-flex items-center gap-2 bg-zinc-900 border border-emerald-500/50 px-6 py-2 rounded-full text-emerald-400 text-sm tracking-widest">
-          <span class="relative flex h-3 w-3">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
-          </span>
-          NOW HUNTING MONSTERS
-        </div>
-        
-        <h1 class="title-font text-8xl md:text-9xl leading-none font-black tracking-tighter neon-text">
-          MAHNSTER
-        </h1>
-        
-        <p class="text-3xl text-zinc-400 max-w-lg">
-          Monster Hunter speedrunner • Digital artist • Chaos creator
-        </p>
-        
-        <div class="flex gap-4">
-          <a href="https://www.youtube.com/@MahnsterHunter" target="_blank"
-             class="px-10 py-6 bg-emerald-500 hover:bg-emerald-600 text-black font-bold text-2xl transition flex items-center gap-3">
-            <i class="fab fa-youtube"></i>
-            WATCH RUNS
-          </a>
-          <a href="#contact" 
-             class="px-10 py-6 border-4 border-pink-500 hover:bg-pink-500/10 text-pink-400 font-bold text-2xl transition">
-            BECOME A MAHNSTER
-          </a>
-        </div>
-        
-        <div class="flex gap-8 text-sm text-zinc-500">
-          <div>SWITCH AXE MAIN</div>
-          <div>TA SPEEDRUNS</div>
-          <div>NEON ART</div>
-        </div>
-      </div>
-
-      <!-- Visual -->
-      <div class="relative flex justify-center">
-        <div class="text-[300px] leading-none font-black text-emerald-500/10 monster-glow">M</div>
-        <div class="absolute inset-0 flex items-center justify-center">
-          <i class="fas fa-dragon text-[180px] text-pink-500/30"></i>
-        </div>
-        <div class="absolute bottom-12 -right-6 bg-black border border-emerald-500 p-4 text-center">
-          <div class="text-emerald-400 text-sm">CURRENT PB</div>
-          <div class="text-5xl font-bold text-white">4:12</div>
-          <div class="text-xs text-zinc-500">Rathian • Sunbreak</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-      <i class="fas fa-chevron-down text-4xl text-emerald-400"></i>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-32 bg-black border-t border-b border-zinc-900">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <h2 class="title-font text-6xl neon-text mb-8">WHO IS MAHNSTER?</h2>
-          <div class="space-y-6 text-xl text-zinc-300 leading-relaxed">
-            <p>Speedrunner, artist, and certified monster slayer.</p>
-            <p>I main Switch Axe, chase sub-5 minute hunts, and draw neon-soaked chaos in my free time.</p>
-            <p>When I'm not carving tails in Monster Hunter, I'm creating digital art, animations, and whatever wild idea comes next.</p>
-          </div>
-        </div>
-        <div class="bg-zinc-900 p-8 border border-emerald-500/30 rounded-3xl">
-          <ul class="space-y-6 text-lg">
-            <li class="flex gap-4"><span class="text-emerald-400">→</span> Monster Hunter World / Rise / Sunbreak / Wilds specialist</li>
-            <li class="flex gap-4"><span class="text-emerald-400">→</span> Switch Axe speedruns & tutorials</li>
-            <li class="flex gap-4"><span class="text-emerald-400">→</span> Digital illustrations & animations</li>
-            <li class="flex gap-4"><span class="text-emerald-400">→</span> Occasional collabs and community events</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work / Content -->
-  <section id="work" class="py-32 bg-zinc-950">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="title-font text-6xl text-center neon-text mb-16">LATEST HUNTS & CREATIONS</h2>
-      
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Placeholder cards - replace links with your actual content -->
-        <a href="https://www.youtube.com/@MahnsterHunter" target="_blank" class="group">
-          <div class="bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500 transition overflow-hidden rounded-3xl">
-            <div class="h-64 bg-gradient-to-br from-pink-500 to-emerald-500 flex items-center justify-center">
-              <i class="fab fa-youtube text-8xl text-black/30 group-hover:scale-110 transition"></i>
-            </div>
-            <div class="p-6">
-              <div class="text-emerald-400 text-sm mb-1">SPEEDRUN</div>
-              <div class="text-2xl font-bold">Monster Hunter Wilds - First Impressions TA</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="#" class="group">
-          <div class="bg-zinc-900 border border-zinc-800 group-hover:border-pink-500 transition overflow-hidden rounded-3xl">
-            <div class="h-64 bg-zinc-800 flex items-center justify-center text-8xl">🎨</div>
-            <div class="p-6">
-              <div class="text-pink-400 text-sm mb-1">ART</div>
-              <div class="text-2xl font-bold">Neon Rathalos Illustration</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://www.youtube.com/@MahnsterHunter" target="_blank" class="group">
-          <div class="bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500 transition overflow-hidden rounded-3xl">
-            <div class="h-64 bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center">
-              <i class="fas fa-dragon text-8xl text-black/30"></i>
-            </div>
-            <div class="p-6">
-              <div class="text-emerald-400 text-sm mb-1">GUIDE</div>
-              <div class="text-2xl font-bold">How to Improve at Switch Axe</div>
-            </div>
-          </div>
-        </a>
-      </div>
-      
-      <div class="text-center mt-12">
-        <a href="https://www.youtube.com/@MahnsterHunter" target="_blank"
-           class="inline-block px-12 py-6 border-4 border-emerald-500 hover:bg-emerald-500 hover:text-black text-2xl transition">
-          SEE ALL ON YOUTUBE →
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact / Newsletter -->
-  <section id="contact" class="py-32 bg-black">
-    <div class="max-w-2xl mx-auto px-6 text-center">
-      <h2 class="title-font text-6xl neon-text mb-6">JOIN THE HORDE</h2>
-      <p class="text-2xl text-zinc-400 mb-12">Get updates on new runs, art drops, and monster-slaying tips.</p>
-      
-      <form action="https://formspree.io/f/your-id" method="POST" class="space-y-6">
-        <input type="email" name="email" placeholder="your@email.com" required
-               class="w-full bg-zinc-900 border border-zinc-700 focus:border-emerald-500 px-8 py-6 text-2xl outline-none rounded-3xl">
-        <button type="submit"
-                class="w-full bg-gradient-to-r from-emerald-500 to-pink-500 hover:from-pink-500 hover:to-emerald-500 py-8 text-3xl font-bold transition">
-          BECOME A MAHNSTER
-        </button>
-      </form>
-      
-      <div class="flex justify-center gap-8 mt-16 text-4xl">
-        <a href="https://www.youtube.com/@MahnsterHunter" target="_blank" class="hover:text-red-500 transition"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.instagram.com/mahnster_piece/" target="_blank" class="hover:text-pink-500 transition"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="hover:text-emerald-400 transition"><i class="fab fa-twitch"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-zinc-950 py-12 border-t border-zinc-900 text-center text-zinc-500">
-    <div class="max-w-7xl mx-auto px-6">
-      <p>© 2026 MAHNSTER • MADE TO HUNT</p>
-      <p class="mt-2 text-xs">Not affiliated with Capcom. Just a huge fan.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Simple Tailwind script (already included via CDN)
-  </script>
+<body>
+  <div class="container">
+    <h1>Mahnster</h1>
+    <p>Something awesome is coming soon.</p>
+    <a href="mailto:hello@mahnster.com" class="btn">Contact</a>
+  </div>
 </body>
 </html>
